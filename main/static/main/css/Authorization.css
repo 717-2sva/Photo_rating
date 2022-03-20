@@ -1,0 +1,100 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Charter';
+   }
+@font-face {
+	font-family: 'Charter';
+	src: url("../../../../../../../ТУСУР/3 курс/ТиМП/WebSite/Fonts/Charter.ttf");
+}
+#head {
+  width: 100%;
+  height: 10vh;
+  background: #1f1f1f;
+}
+.Logo a {
+  margin-left: 25%;
+}
+.Logo {
+  color: white;
+  font-size: 20px;
+
+}
+.Authorization {
+  /* background: black; */
+  width: 52%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 13%;
+
+}
+/* table, th, td {
+  border: 1px solid grey;
+  text-align: center; */
+.AutTable {
+  text-align: center;
+}
+.Img {
+  width: 100%;
+  margin-right: 10%;
+}
+.TextAut{
+margin-bottom: 5%;
+font-size: 20px;
+font-family: 'Charter';
+}
+.Login {
+  width: 250px;
+  height: 20px;
+  padding-left: 5px;
+  margin-bottom: 15px;
+  border: 1px solid #2d2d2d;
+  border-radius: 5px;
+
+  background-color: #f4f4f4;
+}
+.Password {
+  width: 250px;
+  height: 20px;
+  padding-left: 5px;
+  margin-bottom: 15px;
+  border: 1px solid #2d2d2d;
+  border-radius: 5px;
+  font-family: 'Charter';
+  background-color: #f4f4f4;
+}
+.Registration {
+
+  width: 35%;
+  padding: 0px 6px 0px 6px;
+  border: 0px;
+  border-radius: 5px;
+  background-color: #1f1f1f;
+  color: white;
+  border: 1px solid;
+  border-color: black;
+}
+.Registration:hover {
+  color: white;
+  background: #595959;
+  tansition: all .3s linear;
+  -webkit-transition: all .3s linear;
+  -moz-transition: all .3s linear;
+}
+.Done {
+  margin-left: 5%;
+  width: 35%;
+  padding: 0px 6px 0px 6px;
+  border: 1px solid;
+  border-color: black;
+  border-radius: 5px;
+  background-color: #1f1f1f;
+  color: white;
+}
+.Done:hover {
+  color: white;
+  background: #595959;
+  tansition: all .3s linear;
+  -webkit-transition: all .3s linear;
+  -moz-transition: all .3s linear;
+}

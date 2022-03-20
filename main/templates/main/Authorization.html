@@ -1,0 +1,66 @@
+{% extends 'main/layout.html' %}
+{% load static %}
+
+{% block title %}
+    Вход | PhotoRating
+{% endblock %}
+
+{% block head %}
+<div class="head_index">
+    <a href="">
+        <div class="Logo">
+            <div class="Logo_index_first">PHOTO</div>
+            <br>
+            <div class="Logo_index_second">RATING</div>
+        </div>
+    </a>
+</div>
+{% endblock %}
+
+{% block authorization %}
+<div class="Authorization">
+    <table class="AutTable">
+        <tr>
+          <td><img src = "{% static 'main/img/Aut_photo.png' %}" class="Img"></td>
+          <td><div class="TextAut">Авторизация</div>
+              <input type="text" name="Login" value="" class="Login" placeholder="Логин">
+              <input type="text" name="Password" value="" class="Password" placeholder="Пароль">
+              </a><button type="button" name="Registration" class = "Registration" onmousedown = ShowWindowRegistration()>Регистрация</button>
+              <a href="{% url 'registration' %}"><button type="button" name="Done" class = "Done">Войти</button></a></td>
+        </tr>
+      </table>
+</div>
+<!--    {% include 'main/test.html' %}-->
+{% endblock %}
+
+{% block registration %}
+<div id="BackgroundBlack">
+    <div id = "RegistrationActive">
+      <div class = "HeadReg">
+        <div class = "NameReg"> Регистрация </div>
+      </div>
+      <table class="TableReg">
+        <tr>
+          <td>
+            <input type="text" name="Name" value="" class="EntryReg" placeholder="Фамилия">
+            <input type="text" name="Name" value="" class="EntryReg" placeholder="Имя">
+            <input type="text" name="Name" value="" class="EntryReg" placeholder="Отчество">
+          </td>
+          <td>
+            <input type="text" name="Name" value="" class="EntryReg" placeholder="Логин">
+            <input type="text" name="Name" value="" class="EntryReg" placeholder="Пароль">
+            <input type="text" name="Name" value="" class="EntryReg" placeholder="Повторите пароль">
+          </td>
+          <tr>
+            <td colspan="2">
+              <input type="text" name="Name" value="" class="EntryAboutMe" placeholder="О себе">
+            </td>
+          </tr>
+      </tr>
+      </table>
+      <div class = "FooterReg">
+        <button type="button" name="Done" class = "ButtonReg">Отправить</button>
+      </div>
+    </div>
+</div>
+{% endblock %}

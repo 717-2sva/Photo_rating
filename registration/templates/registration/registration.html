@@ -1,0 +1,42 @@
+{% extends 'main/layout.html' %}
+{% load static %}
+
+{% block title %}
+    Вход | PhotoRating
+{% endblock %}
+
+{% block head %}
+<div class="head_index">
+    <a href="">
+        <div class="Logo">
+            <div class="Logo_index_first">PHOTO</div>
+            <br>
+            <div class="Logo_index_second">RATING</div>
+        </div>
+    </a>
+</div>
+{% endblock %}
+
+{% block registration %}
+<div class="Registr_window_position">
+    <div class="Registr_background">
+       <div class="Registr_head">
+           <div class="Registr_logo">
+              <div class="Logo_registr">Регистрация</div>
+           </div>
+       </div>
+      <div class="Registr_position">
+            <form action="" method="post">
+                {% csrf_token %}
+                {{ form.as_p }}
+                <div class="Registr_button">
+                    <p><input class="Registr_button_style" type="submit" value="Зарегистрировать"></p>
+                </div>
+            </form>
+
+      </div>
+    </div>
+</div>
+{% endblock %}
+
+

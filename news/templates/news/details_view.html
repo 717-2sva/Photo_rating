@@ -1,0 +1,36 @@
+{% extends 'main/layout.html' %}
+{% load static %}
+
+{% block title %}{{ article.title }} | PhotoRating{% endblock %}
+
+{% block head %}
+<div class="head_index">
+    <div class="Logo">
+        <div class="Logo_index_first">PHOTO</div>
+        <br>
+        <div class="Logo_index_second">RATING</div>
+    </div>
+    <div class="style_menu">
+        <a href="">Главная</a>
+        <a href="">Фотографы</a>
+        <a href="">Рейтинг</a>
+        <a href="">О нас</a>
+    </div>
+
+</div>
+{% endblock %}
+
+{% block content %}
+<div class = "position_detail_view">
+<!--    <div class = "alert alert-warning">-->
+        <h3>{{ article.title }}</h3>
+        <p>{{ article.data }}</p>
+        <p>{{ article.full_text }}</p>
+        {% if el.image %}
+        <p><img src="{{ article.image.url }}" class="card-img-top img-fluid" alt="{{ post.title }}"></p>
+        {% endif %}
+        <a href="{% url 'news-update' article.id %}" class="btn btn-primary">Редактировать</a>
+        <a href="{% url 'news-delete' article.id %}" class="btn btn-danger">Удалить статью</a>
+<!--    </div>-->
+</div>
+{% endblock %}

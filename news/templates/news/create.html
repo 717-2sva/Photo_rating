@@ -1,0 +1,36 @@
+{% extends 'main/layout.html' %}
+{% load static %}
+
+{% block title %}Добавить новость | PhotoRating{% endblock %}
+
+{% block head %}
+<div class="head_index">
+    <div class="Logo">
+        <div class="Logo_index_first">PHOTO</div>
+        <br>
+        <div class="Logo_index_second">RATING</div>
+    </div>
+    <div class="style_menu">
+        <a href="">Главная</a>
+        <a href="">Фотографы</a>
+        <a href="">Рейтинг</a>
+        <a href="">О нас</a>
+    </div>
+</div>
+{% endblock %}
+
+{% block content %}
+<div class="form_position">
+    <h3>Добавление записи</h3>
+        <form method="post" enctype="multipart/form-data">
+            {% csrf_token %}
+            {{ form.title }}<br>
+            {{ form.anons }}<br>
+            {{ form.full_text }}<br>
+            {{ form.data }}<br>
+            {{ form.image }}
+            <span>{{ error }}</span><br>
+            <button class="btn btn-success" type="submit">Добавить статью</button>
+        </form>
+</div>
+{% endblock %}

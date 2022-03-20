@@ -1,0 +1,152 @@
+body {
+  background: white;
+  font-family: 'Charter';
+}
+.head_index {
+  display: flex;
+  width: 100%;
+  /*height: 10vh;*/
+  background: #1f1f1f;
+}
+.Logo{
+  /*padding: 0.5% 0% 0.5% 5%;*/
+  display: flex;
+  /*width: 25%;*/
+  margin: auto;
+  line-height: 1;
+  font-size: 25px;
+  color: white;
+}
+.Logo a {
+    text-decoration: none;
+    color: white;
+    margin: auto;
+}
+.Logo_index_first {
+  display: inline-block;
+}
+.Logo_index_second {
+  display: inline-block;
+  padding-left: 67px;
+}
+.style_menu {
+  width: 50%;
+  align-items: center;
+  display: flex;
+  margin: auto;
+  font-size: 18px;
+}
+.style_menu a {
+  text-decoration: none;
+  color: white;
+  margin: 0 auto;
+  padding: 0.5% 2% 0.5% 2%;
+}
+.style_menu a:hover {
+  border: 0px solid #1765f5;
+  background-color: #196bfd;
+  border-radius: 10px;
+  /*padding: 2px;*/
+  color: white;
+}
+.add_new_photo {
+    width: 50%;
+    display: flex;
+    margin: auto;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+.style_menu_button {
+  display: flex;
+  margin: auto;
+  width: 100%;
+  border: 0px;
+}
+.style_menu_button a{
+  margin: auto;
+  width: 100%;
+  border: 0px;
+}
+.add_news_button {
+    background-color: #f5f5f5;
+  color: white;
+  width: 100%;
+  border: 1px solid #eeeeee;;
+  border-radius: 10px;
+}
+.add_news_button:hover {
+background-color: #ececec;
+}
+
+/*Всплывающее меню
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+    margin: auto;
+    display: inline-block;
+    position: relative;
+    margin-right: auto;
+
+}
+
+/* Dropdown Button */
+.dropbtn {
+    height: 100%;
+    display: flex;
+    background-color: #1f1f1f;
+    color: white;
+    margin: auto;
+    border: none;
+    cursor: pointer;
+    z-index: 5;
+}
+
+/* Dropdown button on hover & focus */
+.dropbtn:hover, .dropbtn:focus {
+    background-color: #2f2f2f;
+
+}
+.btn_name_setting {
+    display: flex;
+    margin: auto 0;
+    padding: 10px;
+    z-index: 0;
+}
+.User_photo_btn {
+    margin: auto;
+    display: flex;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    float: left;
+}
+.User_photo_btn img {
+    border-radius: 50%;
+}
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+    width: 100%;
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {
+    background-color: #ddd
+}
+
+/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+.show {
+    display:block;
+}

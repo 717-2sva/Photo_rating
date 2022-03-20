@@ -1,0 +1,144 @@
+.position_news{
+    display: flex;
+    width: 100%;
+    padding-top: 20px;
+    line-height:1;
+}
+.User_photo{
+    display: flex;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    float: left;
+}
+
+.User_photo img{
+    border-radius: 50%;
+}
+.User_setting{
+    display: block;
+    width: auto;
+    height: 40px;
+    line-height: 1;
+}
+.Position_Name_Date{
+    display: block;
+    padding-top: 0px;
+    float: left;
+}
+.User_container_name{
+    height: 20px;
+    display: flex;
+    width: auto;
+}
+.User_name{
+    font-size: 20px;
+    padding-left: 10px;
+    color: #2c5984;
+}
+.User_name a{
+    text-decoration: none;
+}
+.User_container_date{
+    float: left;
+    height: 20px;
+    display: flex;
+    padding-top: 6px;
+}
+.User_date{
+    font-size: 11px;
+    padding-left: 10px;
+}
+.news_editing {
+    float: right;
+    width: auto;
+}
+.edit {
+    float: left;
+    text-decoration: none;
+    padding-right: 10px;
+}
+.edit i{
+    color: #c4c4c4;
+}
+.edit i:hover {
+    color: #2c5984;
+}
+.delete {
+    float: right;
+}
+.delete i{
+    color: #c4c4c4;
+}
+.delete i:hover {
+    color: #bd1313;
+}
+.no_have_news{
+    float: left;
+    clear: both;
+    width: 400px;
+    text-align: center;
+    margin: auto;
+}
+.setting_news {
+    float: left;
+    padding: 10px;
+    border-radius: 8px;
+    clear: both;
+    width: 50%;
+    text-align: left;
+    margin: auto;
+    background-color: #f5f5f5;
+    border: 1px solid;
+    border-color: #eeeeee;
+}
+.setting_img {
+    padding-top: 1%;
+    width: 100%;
+    margin: 0 auto;
+    position: center;
+}
+.like_and_comment {
+    display: flex;
+    float: left;
+    margin: 10px 0px 0px 10px;
+    /*background-color: white;*/
+    /*border: 1px solid #f5f5f5;*/
+    /*border-radius: 5px;*/
+}
+.like {
+    background-color: white;
+    border: 2px solid #f5f5f5;
+    border-radius: 8px;
+    padding: 2px 10px 2px 10px;
+    color: #c4c4c4;
+    border: 2px;
+
+}
+.like:hover {
+    background-color: #dedddd;
+    color: #bd1313;
+}
+.like i{
+    padding: 4px;
+    font-size:20px;
+}
+.comment{
+    margin-left: 10px;
+    background-color: white;
+    border: 2px solid #f5f5f5;
+    border-radius: 8px;
+    padding: 2px 10px 2px 10px;
+    color: #c4c4c4;
+    border: 2px;
+}
+.comment:hover{
+    background-color: #dedddd;
+    color: #2c5984;
+}
+.comment i{
+    padding: 4px;
+    font-size:20px;
+}
+
+

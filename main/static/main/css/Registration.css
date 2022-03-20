@@ -1,0 +1,95 @@
+#RegistrationActive {
+  display: flex;
+  width: 100%;
+  background: white;
+  border: 0.1px solid grey;
+  border-radius: 7px 7px 7px 7px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10%;
+  position: relative;
+  transform: translateY(-150%);
+  animation: ani 0.5s forwards;
+}
+@keyframes ani {
+  0% {transform: translateY(-150%);}
+  100% {transform: translateY(0);}
+}
+#BackgroundBlack {
+  display: none;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  background-color: rgba(0, 0, 0, .7);
+  z-index: 2;
+}
+
+.HeadReg {
+  background: #1f1f1f;
+  padding-top: 2%;
+  padding-bottom: 2%;
+  color: white;
+  text-align: center;
+  height: 10%;
+  border-radius: 6px 6px 0px 0px;
+}
+.TableReg {
+  padding-top: 5%;
+}
+.NameReg {
+  /* padding-top: 1%; */
+  margin-bottom: auto;
+  margin-top: auto;
+  font-size: 20px;
+  font-family: 'Charter';
+}
+.EntryReg {
+  width: 250px;
+  height: 20px;
+  padding-left: 5px;
+  margin-bottom: 6%;
+  border: 0.5px solid #2d2d2d;
+  border-radius: 5px;
+  font-family: 'Charter';
+  background-color: #f4f4f4;
+  text-align: left;
+  margin-left: 10%;
+}
+.EntryAboutMe {
+  width: 88.8%;
+  height: 130px;
+  padding-left: 5px;
+  border: 1px solid #2d2d2d;
+  border-radius: 5px;
+  font-family: 'Charter';
+  background-color: #f4f4f4;
+  margin-left: 5%;
+  /*text-align: top;*/
+}
+.FooterReg {
+  background: #1f1f1f;
+  padding-top: 2%;
+  padding-bottom: 2%;
+  text-align: center;
+  font-family: 'Charter';
+  color: white;
+  height: 10%;
+  border-radius: 0px 0px 6px 6px;
+  margin-top: 3%;
+}
+.ButtonReg {
+  color: white;
+  background: #1f1f1f;
+  width: 112.5px;
+  height: 22px;
+  margin-bottom: auto;
+  margin-top: auto;
+  border: 0px;
+  background-color: #1f1f1f;
+  font-family: 'Charter';
+  font-size: 20px;
+  border: 0px solid grey;
+  color: white;
+}

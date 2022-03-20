@@ -1,0 +1,96 @@
+{% extends 'main/layout.html' %}
+{% load static %}
+
+{% block title %}Новости  | PhotoRating{% endblock %}
+
+{% block head %}
+<div class="head_index">
+    <div class="Logo">
+        <a href="">
+            <div class="Logo_index_first">PHOTO</div>
+            <br>
+            <div class="Logo_index_second">RATING</div>
+        </a>
+    </div>
+
+    <div class="style_menu">
+        <a href="">Главная</a>
+        <a href="">Фотографы</a>
+        <a href="">Рейтинг</a>
+        <a href="">О нас</a>
+    </div>
+
+
+    <div class="dropdown">
+        <button  class="dropbtn">
+          <div class = "User_photo_btn">
+              <img src="{% static '/index/img/BaBqvohv4M4.jpeg' %}" alt="">
+          </div>
+          <div class="btn_name_setting">
+              {{ user.first_name }} <i class="fa fa-sort-desc" aria-hidden="true"></i>
+          </div>
+        </button>
+    <div id="myDropdown" class="dropdown-content">
+        <a href="#">Настройки</a>
+        <a href="{% url 'logout' %}">Выход</a>
+    </div>
+
+</div>
+</div>
+{% endblock %}
+
+{% block content %}
+    <div class="add_new_photo">
+        <div class="style_menu_button">
+            <a href="{% url 'create' %}">
+                <button class="add_news_button"><i class="fas fa-plus-circle"></i></button>
+            </a>
+    </div>
+    </div>
+{% if news %}
+    {% for el in news %}
+        <div class = "position_news">
+            <div class = "setting_news">
+                <div class="User_setting">
+                    <div class = "User_photo">
+                        <img src="{% static '/index/img/BaBqvohv4M4.jpeg' %}" alt="">
+                    </div>
+                    <div class="Position_Name_Date">
+                        <div class="User_container_name">
+                            <div class="User_name">
+                                <a href="">{{ el.author.first_name }} {{ el.author.last_name }}</a>
+                            </div>
+                        </div>
+                        <div class="User_container_date">
+                            <div class="User_date">
+                                {{ el.data }}
+                            </div>
+                        </div>
+                    </div>
+                    <div class="news_editing">
+                            <div class="edit"><a href="{% url 'news-update' el.id %}"><i class="fa fa-magic" aria-hidden="true"></i> </a></div>
+                            <div class="delete"><a href="{% url 'news-delete' el.id %}"><i class="fa fa-trash" aria-hidden="true"></i> </a></div>
+                    </div>
+                </div>
+                {% if el.image %}
+                    <img src="{{ el.image.url }}" class="setting_img">
+                {% endif %}
+                {% if el.image_url %}
+                    <img src="{{ el.image_url }}" class="setting_img">
+                {% endif %}
+                <div class="like_and_comment">
+                    <div class="like"><i class="fa fa-heart" aria-hidden="true"></i></div>
+                    <div class="comment"><i class="fa fa-comments" aria-hidden="true"></i></div>
+                </div>
+<!--                <a href="{% url 'news-detail' el.id %}" class="btn btn-warning">Читать далее</a>-->
+            </div>
+        </div>
+    {% endfor %}
+{% else %}
+        <div class = "position_news">
+            <div class="no_have_news">
+                <H3>У вас нет записей</H3>
+            </div>
+        </div>
+{% endif %}
+{% endblock %}
